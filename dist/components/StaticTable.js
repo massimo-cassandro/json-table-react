@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _react = _interopRequireDefault(require("react"));
-var _tableToCsv = _interopRequireDefault(require("../../src/table-to-csv"));
+var _tableToCsv = _interopRequireDefault(require("../src/table-to-csv"));
 var _jsFileDownload = _interopRequireDefault(require("js-file-download"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 /**
@@ -16,8 +16,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  */
 
 // import classnames from 'classnames';
-
-// import uniqid from '@massimo-cassandro/m-utilities/js-utilities/unique-id';
 
 function StaticTable(props) {
   const tableRef = _react.default.useRef();

@@ -1,6 +1,6 @@
 {
   "name": "@massimo-cassandro/json-table-react",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Html table builder from json (react)",
   "main": "dist/index.js",
   "homepage": ".",
@@ -8,7 +8,7 @@
     "start": "PORT=3501 react-scripts start",
     "start (FF)": "BROWSER=Firefox PORT=3501 react-scripts start",
     "build": "react-scripts build",
-    "make-dist": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist",
+    "make-dist": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files && cp -R src/src dist",
     "upd vers": "npx update-version",
     "local server (esm demo)": "python3 -m http.server",
     "npm publish": "npm publish",

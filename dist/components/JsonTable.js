@@ -8,8 +8,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 var _classnames = _interopRequireDefault(require("classnames"));
 var _react = _interopRequireWildcard(require("react"));
 var _JsonTableModule = _interopRequireDefault(require("./styles/JsonTable.module.scss"));
-var _uniqueId = _interopRequireDefault(require("@massimo-cassandro/m-utilities/js-utilities/unique-id"));
-var _buildPageArray = _interopRequireWildcard(require("../../src/build-page-array"));
+var _jsUtilities = _interopRequireDefault(require("@massimo-cassandro/js-utilities"));
+var _buildPageArray = _interopRequireWildcard(require("../src/build-page-array"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -27,7 +27,7 @@ function JsonTable(props) {
     [loadingOffsetTop, setLoadingOffsetTop] = (0, _react.useState)(null),
     // offset top elemento loading
     [tableInfo, updateTableInfo] = (0, _react.useState)(null),
-    navBarId = (0, _uniqueId.default)(),
+    navBarId = (0, _jsUtilities.default)(),
     column_url_params = (() => {
       let p = [];
       props.columns.forEach((item, idx) => {
