@@ -13,7 +13,7 @@ import classnames from 'classnames';
 import React, { useState, useEffect, useRef } from 'react';
 // import styled from 'styled-components';
 import styles from './styles/JsonTable.module.scss';
-import unique_id from '@massimo-cassandro/js-utilities';
+import {unique_id} from '@massimo-cassandro/js-utilities';
 
 import build_page_array, {calcTotPages} from '../src/build-page-array';
 
